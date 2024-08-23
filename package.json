@@ -1,0 +1,33 @@
+{
+  "name": "server-phonebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src",
+    "dev:docker": "docker-compose up -d && ts-node-dev src",
+    "lint": "eslint --ext .ts .",
+    "compiler": "tsc",
+    "start": "node dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "2.8.17",
+    "@types/express": "4.17.21",
+    "@types/morgan": "1.9.9",
+    "@typescript-eslint/eslint-plugin": "7.7.1",
+    "@typescript-eslint/parser": "7.7.1",
+    "eslint": "8.57.0",
+    "morgan": "1.10.0",
+    "ts-node-dev": "2.0.0",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "mongoose": "8.3.3"
+  }
+}

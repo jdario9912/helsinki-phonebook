@@ -1,0 +1,25 @@
+@baseUrl=http://localhost:3001
+
+### Get uknow path
+GET {{baseUrl}}/wasi-waso
+
+### Get Info
+GET {{baseUrl}}/info
+
+### Get contacts
+GET {{baseUrl}}/api/contacts
+
+### Get contac by id
+GET {{baseUrl}}/api/contacts/3
+
+### Delete contac by id
+DELETE {{baseUrl}}/api/contacts/2
+
+### Add contact
+POST {{baseUrl}}/api/contacts
+content-type: application/json
+
+{
+  "name": "Lucia",
+  "number": "325556"
+}

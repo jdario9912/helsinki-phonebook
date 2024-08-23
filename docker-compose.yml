@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo
+    restart: always
+    env_file:
+      - .env
+    container_name: ${DB_CONTAINER_NAME}
+    ports:
+      - ${DB_PORTS}
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
